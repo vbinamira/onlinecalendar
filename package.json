@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "show calendar dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vince Binamira\u001b[A\u001b[A\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[B\u001b[B\u001b[C\u001b[C\u001b[A\u001b[A\u001b[D\u001b[D \u001b[B\u001b[B\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C (vbinamira09@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "fullcalendar": "^3.3.1",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1"
+  }
+}
