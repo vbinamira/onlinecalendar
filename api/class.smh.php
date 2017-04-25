@@ -1,8 +1,12 @@
 <?php
-
+  //*********************************************************
+  //
+  // MAKE SURE TO CHANGE SHEET # IN THE URL SECTION OF CURL
+  //
+  //*********************************************************
   class SmartAPI {
 
-    public function getShows() {
+    public function getDataOne() {
       $curl = curl_init();
 
       curl_setopt_array($curl, array(
@@ -35,7 +39,7 @@
       }
     }
 
-    public function getVegasDancers()
+    public function getDataTwo()
     {
       $curl = curl_init();
 
@@ -68,7 +72,7 @@
       }
     }
 
-    public function getVegasSingers()
+    public function getDataThree()
     {
       $curl = curl_init();
 
