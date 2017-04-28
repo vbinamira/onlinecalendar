@@ -338,41 +338,44 @@ $('#calendar').fullCalendar({
   }
 });
 
-// Needs Fixing
-// function saishopondoho(date)
-// {
-//   var maximillianarnold = date;
-//   var vegasdate = moment(maximillianarnold).format("L");
-//   console.log(vegasdate);
-//   $.ajax({
-//     url: 'api/get-vegas-dancers.php'
-//   })
-//   .done(function(data) {
-//     var rumi = $.parseJSON(data);
-//     var rumicols = rumi.columns;
-//     var rumirows = rumi.rows;
-//     for (var i = 1; i < rumicols.length; i++) {
-//       var dates = rumicols[i].title;
-//       var apidate = moment(new Date(dates)).format("L");
-//       if(vegasdate == apidate)
-//       {
-//         $('#dolladollabills').click(function(event) {
-//           console.log(vegasdate);
-//         });
-//       }
-//       else
-//       {
-//         console.log("Sam is my friend");
-//       }
-//     }
-//     console.log("success");
-//   })
-//   .fail(function() {
-//     console.log("error");
-//   })
-//   .always(function() {
-//     console.log("complete");
-//   });
-// }
+// When Modal is Opens 
+// Get additional info from new php call
+$('#calendarModal').on('show.bs.modal', function (e) {
+  $.ajax({
+    url: '/api/get-data-two', // sample data 
+  })
+  .done(function(data) {
+    var samplecontainer = data;
+    // Loop through json to get all data from value object in json
+    for (var i = 0; i < samplecontainer.length; i++) {
+      var sampledata = samplecontainer[i].value;
+      var addhtml = "<li class='list-group-item'>" + sampledata + "</li>";
+      $(addhtml).appendTo('#add-info');
+    }
+    console.log("success");
+  })
+  .fail(function() {
+    console.log("error");
+  })
+  .always(function() {
+    console.log("complete");
+  });
+});
+
+// When Additional Info is clicked show content
+$('#add-info-btn').click(function(event) {
+  $('#add-info').removeClass('hidden');
+  $('#info-label').removeClass('hidden');
+});
+
+// When modal is closed hide content, so that it doesn't bleed over to other modals
+// Remove data from json
+$('#calendarModal').on('hidden.bs.modal', function(e) {
+  $('#add-info').addClass('hidden');
+  $('#info-label').addClass('hidden');
+  $('#add-info').children('li').remove();
+});
+
+
 
 
