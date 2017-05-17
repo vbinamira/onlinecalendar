@@ -18,7 +18,7 @@
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => array(
-          "authorization: Bearer 27oolsepjtucoul2ovisucy407",
+          "authorization: Bearer <insert_api_key_here>",
           "cache-control: no-cache",
           "exclude: nonexistentCells",
           "postman-token: 5fc937f9-20ba-dfad-7be3-d2f06533b840"
@@ -52,7 +52,7 @@
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => array(
-          "authorization: Bearer 27oolsepjtucoul2ovisucy407",
+          "authorization: Bearer <insert_api_key_here>",
           "cache-control: no-cache",
           "exclude: nonexistentCells",
           "postman-token: 5fc937f9-20ba-dfad-7be3-d2f06533b840"
@@ -85,7 +85,7 @@
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => array(
-          "authorization: Bearer 27oolsepjtucoul2ovisucy407",
+          "authorization: Bearer <insert_api_key_here>",
           "cache-control: no-cache",
           "exclude: nonexistentCells",
           "postman-token: 5fc937f9-20ba-dfad-7be3-d2f06533b840"
