@@ -1,11 +1,12 @@
 // Dependencies
 // -----------------------------------------------------
 var express         = require('express');
-// var mongoose        = require('mongoose');
+// var mongoose        = require('mongoose'); 
 var port            = process.env.PORT || 3000;
 var morgan          = require('morgan');
 var bodyParser      = require('body-parser');
 var methodOverride  = require('method-override');
+var client 			= require('smartsheet');
 var app             = express();
 
 // Express Configuration
@@ -26,7 +27,8 @@ app.use(methodOverride());
 
 // Routes
 // ------------------------------------------------------
-// require('./app/routes.js')(app);
+require('./app/routes.js')(app);
+
 
 // Listen
 // -------------------------------------------------------
