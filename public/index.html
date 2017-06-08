@@ -10,64 +10,70 @@
 </head>
 <body>
 	<div class="container">
-		<div id="calendar"></div>
-		<div id="calendarModal" class="modal fade">
-			<div class="modal-dialog">
-			    <div class="modal-content">
-			        <div class="modal-header">
-			            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> 	<span class="sr-only">close</span>
-			            </button>
-			            <h4 id="modalTitle" class="modal-title"></h4>
-			        </div>
-			        <div id="modalBody" class="modal-body">
-			        	<div class="col-md-12">
-			        		<ul class="list-group">
-			        			<li class="list-group-item"><b>Time:</b> <span id="event-time"></span></li>
-			        			<li class="list-group-item" id="mushrooms"><b>Act 1:</b> <span id="event-act-one"></span></li>
-			        			<li class="list-group-item" id="samismyfriend"><b>Act 2:</b> <span id="event-act-two"></span></li>
-			        			<li class="list-group-item hidden" id="croissants"><b>Act 3:</b> <span id="event-act-three"></span></li>
-			        			<li class="list-group-item hidden" id="v-cast"><b>Cast:</b>
-			        				<ul class="list-group">
-			        					<li class="list-group-item" id="cast-one"></li>
-			        					<li class="list-group-item" id="cast-two"></li>
-			        					<li class="list-group-item" id="cast-three"></li>
-			        					<li class="list-group-item" id="cast-four"></li>
-			        					<li class="list-group-item" id="cast-five"></li>
-			        					<li class="list-group-item" id="cast-six"></li>
-			        					<li class="list-group-item" id="cast-seven"></li>
-			        					<li class="list-group-item" id="cast-eight"></li>
-			        					<li class="list-group-item" id="cast-nine"></li>
-			        					<li class="list-group-item" id="cast-ten"></li>
-			        					<li class="list-group-item" id="cast-eleven"></li>
-			        					<li class="list-group-item" id="cast-twelve"></li>
-			        					<li class="list-group-item" id="cast-thirteen"></li>
-			        					<li class="list-group-item" id="cast-fourteen"></li>
-			        				</ul>
-			        			</li>
-			        		</ul>
-			        	</div>
-			        	<div class="col-md-12">
-			        		<div class="col-md-6">
-			        			<label for="dancers" class="hidden" id="dance_label">Vegas Dancers: </label>
-			        			<ul class="list-group hidden" id="vegas-dancers">
-			        		
-			        			</ul>
-			        		</div>
-			        		<div class="col-md-6">
-			        			<label for="dancers" class="hidden" id="sing_label">Vegas Singers: </label>
-			        			<ul class="list-group hidden" id="vegas-singers">
-			        				
-			        			</ul>
-			        		</div>
-			        	</div> 
-			        </div>
-			        <div class="modal-footer">
-			            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			            <button class="btn btn-default hidden" id="dolladollabills">Show Dancers and Singers</button>
-			        </div>
-			    </div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">FULL CALENDAR SMARTSHEET API</h1>
+				<div id="calendar"></div>
+				<div id="calendarModal" class="modal fade">
+					<div class="modal-dialog">
+					    <div class="modal-content">
+					        <div class="modal-header">
+					            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> 	<span class="sr-only">close</span>
+					            </button>
+					            <h4 id="modalTitle" class="modal-title"></h4>
+					        </div>
+					        <div id="modalBody" class="modal-body">
+					        	<div class="col-md-12">
+					        		<ul class="list-group">
+					        			<li class="list-group-item"><b>Time:</b> <span id="event-time"></span></li>
+					        			<li class="list-group-item" id="mushrooms"><b>Act 1:</b> <span id="event-act-one"></span></li>
+					        			<li class="list-group-item" id="samismyfriend"><b>Act 2:</b> <span id="event-act-two"></span></li>
+					        			<li class="list-group-item hidden" id="croissants"><b>Act 3:</b> <span id="event-act-three"></span></li>
+					        			<li class="list-group-item hidden" id="v-cast"><b>Cast:</b>
+					        				<ul class="list-group">
+					        					<li class="list-group-item" id="cast-one"></li>
+					        					<li class="list-group-item" id="cast-two"></li>
+					        					<li class="list-group-item" id="cast-three"></li>
+					        					<li class="list-group-item" id="cast-four"></li>
+					        					<li class="list-group-item" id="cast-five"></li>
+					        					<li class="list-group-item" id="cast-six"></li>
+					        					<li class="list-group-item" id="cast-seven"></li>
+					        					<li class="list-group-item" id="cast-eight"></li>
+					        					<li class="list-group-item" id="cast-nine"></li>
+					        					<li class="list-group-item" id="cast-ten"></li>
+					        					<li class="list-group-item" id="cast-eleven"></li>
+					        					<li class="list-group-item" id="cast-twelve"></li>
+					        					<li class="list-group-item" id="cast-thirteen"></li>
+					        					<li class="list-group-item" id="cast-fourteen"></li>
+					        				</ul>
+					        			</li>
+					        		</ul>
+					        	</div>
+					        	<div class="col-md-12">
+					        		<div class="col-md-6">
+					        			<label for="dancers" class="hidden" id="dance_label">Vegas Dancers: </label>
+					        			<ul class="list-group hidden" id="vegas-dancers">
+					        		
+					        			</ul>
+					        		</div>
+					        		<div class="col-md-6">
+					        			<label for="dancers" class="hidden" id="sing_label">Vegas Singers: </label>
+					        			<ul class="list-group hidden" id="vegas-singers">
+					        				
+					        			</ul>
+					        		</div>
+					        	</div> 
+					        </div>
+					        <div class="modal-footer">
+					            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					            <button class="btn btn-default hidden" id="dolladollabills">Show Dancers and Singers</button>
+					        </div>
+					    </div>
+					</div>
+				</div>
 			</div>
 		</div>
+		
 	</div>
 	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="../node_modules/moment/moment.js"></script>
